@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Gesture Web app</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+<div class="container">
+  
+<center>
+<h1 class="btn btn-primary heading">Gesture Web app
+<br>
+<span>&#9996;</span>
+<span>&#x1F44C;</span>
+<span>&#128077;</span>
+</h1>
+<br>
+<br>
+<h2>Take a selfie of a gesture to know about it's meaning  on heading</h2>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<label class="btn btn-info">Webcam - </label>
+<br>
+<br>
+<div id="camera"></div>
+<br>
+<button class="btn btn-success" onclick="C_I()">CLick Image</button>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<label class="btn btn-info">Prediction - </label>
+<h2 id="result_gesture_name"></h2>
+<p id="E"></p>
+<br>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<label class="btn btn-info">Snapshot - </label>
+<br>
+<br>
+<div id="result"></div>
+<br>
+<button class="btn btn-success" onclick="Image_I()">Predict Emoji</button>
+<br><br>
+</div>
+</center>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
+ 
